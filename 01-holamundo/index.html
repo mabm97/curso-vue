@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN de VueJS 3 -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Clase-01</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- <h1>{{user.title}}</h1>
+        <h1>{{user.name}}</h1>
+        <h1>{{ user.age <=17 ? 'Vato Menor de edad' : user.name }}</h1>
+
+        <hr>
+        <a v-bind:href="url" >Chinelo.io</a>
+        <hr>
+        <img :src="img" alt=""> -->
+
+        <!-- <h1 :class="classVue"> {{user.age <18 ? classValue = "error" : classValue = "good"}} </h1> -->
+
+        <!-- <h1 v-if="user.age >= 18" class="good">Eres mayor de edad</h1>
+        <h1 v-else class="error">Eres menor de edad </h1> -->
+
+        <!-- <h1 v-if=" user.age <= 0 || user.age>= 100 " class="error_rango">El rango de edad no es correcto, verificalo.
+        </h1>
+        <h1 v-else-if=" user.age<= 18 " class="error">Eres menor de edad</h1>
+        <h1 v-else class="good">Eres mayor de edad</h1> -->
+
+
+        <ul>
+            <li v-for=" (movie,index) in movies " :key="index">{{ index +' -- '+ movie }}</li>
+        </ul>
+
+    </div>
+
+    <script src="./main.js"></script>
+    <script>
+        const mount = app.mount("#app")
+    </script>
+</body>
+
+</html>
